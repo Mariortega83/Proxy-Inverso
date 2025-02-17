@@ -5,7 +5,7 @@ server {
     server_name example.test www.example.test;
 
     location / {
-        proxy_pass http://192.168.57.11:8080;
+        proxy_pass http://web:8080;
         add_header X-friend Mario-Ortega-Perez;
     }
 }
