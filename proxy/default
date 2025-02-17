@@ -5,7 +5,7 @@ server {
     server_name example.test www.example.test;
 
     location / {
-        proxy_pass http://web:8080;
+        proxy_pass http://web:8080; (cambiar por la ip para lo que no sea docker) 
         add_header X-friend Mario-Ortega-Perez;
     }
 }
